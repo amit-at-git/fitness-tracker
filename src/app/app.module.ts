@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { NewTrainingComponent } from './training/new-training/new-training.compo
 import { PastTrainingComponent } from './training/past-training/past-training.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AppRoutingModule } from './app-routing.module';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
